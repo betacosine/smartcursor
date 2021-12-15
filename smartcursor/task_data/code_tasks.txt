@@ -1,0 +1,18 @@
+def Gsearch(query):
+    results = []
+    for i in search(term=query,lang='en',num_results=10):
+        results.append(i)
+    return results
+
+def type_emulator(s):
+    lst = [i for i in s]
+    for l in lst:
+        pyautogui.write(l)
+        time.sleep(.25)
+    pyautogui.press('enter')
+
+def cursor_location(image_path):
+    x,y = pyautogui.locateCenterOnScreen(image_path, confidence=.9)
+    time.sleep(.5)
+    pyautogui.moveTo(x,y)
+

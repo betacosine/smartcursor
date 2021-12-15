@@ -1,0 +1,4 @@
+numpy==1.19.2
+PyAutoGUI==0.9.53
+click==7.1.2
+google==3.0.0
